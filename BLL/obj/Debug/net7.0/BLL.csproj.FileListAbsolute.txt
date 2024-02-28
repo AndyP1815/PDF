@@ -1,0 +1,15 @@
+C:\Users\Andy\source\repos\PdfChange\BLL\bin\Debug\net7.0\BLL.deps.json
+C:\Users\Andy\source\repos\PdfChange\BLL\bin\Debug\net7.0\BLL.dll
+C:\Users\Andy\source\repos\PdfChange\BLL\bin\Debug\net7.0\BLL.pdb
+C:\Users\Andy\source\repos\PdfChange\BLL\bin\Debug\net7.0\DAL.dll
+C:\Users\Andy\source\repos\PdfChange\BLL\bin\Debug\net7.0\DAL.pdb
+C:\Users\Andy\source\repos\PdfChange\BLL\obj\Debug\net7.0\BLL.csproj.AssemblyReference.cache
+C:\Users\Andy\source\repos\PdfChange\BLL\obj\Debug\net7.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andy\source\repos\PdfChange\BLL\obj\Debug\net7.0\BLL.AssemblyInfoInputs.cache
+C:\Users\Andy\source\repos\PdfChange\BLL\obj\Debug\net7.0\BLL.AssemblyInfo.cs
+C:\Users\Andy\source\repos\PdfChange\BLL\obj\Debug\net7.0\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Andy\source\repos\PdfChange\BLL\obj\Debug\net7.0\BLL.csproj.CopyComplete
+C:\Users\Andy\source\repos\PdfChange\BLL\obj\Debug\net7.0\BLL.dll
+C:\Users\Andy\source\repos\PdfChange\BLL\obj\Debug\net7.0\refint\BLL.dll
+C:\Users\Andy\source\repos\PdfChange\BLL\obj\Debug\net7.0\BLL.pdb
+C:\Users\Andy\source\repos\PdfChange\BLL\obj\Debug\net7.0\ref\BLL.dll
