@@ -1,0 +1,13 @@
+C:\Users\Andy\OneDrive\Bureaublad\PdfChange.exe
+C:\Users\Andy\OneDrive\Bureaublad\PdfChange.dll
+C:\Users\Andy\OneDrive\Bureaublad\PdfChange.deps.json
+C:\Users\Andy\OneDrive\Bureaublad\PdfChange.runtimeconfig.json
+C:\Users\Andy\OneDrive\Bureaublad\PdfChange.pdb
+C:\Users\Andy\OneDrive\Bureaublad\BouncyCastle.Crypto.dll
+C:\Users\Andy\OneDrive\Bureaublad\itextsharp.dll
+C:\Users\Andy\OneDrive\Bureaublad\BLL.dll
+C:\Users\Andy\OneDrive\Bureaublad\DAL.dll
+C:\Users\Andy\OneDrive\Bureaublad\EmailSender.dll
+C:\Users\Andy\OneDrive\Bureaublad\DAL.pdb
+C:\Users\Andy\OneDrive\Bureaublad\EmailSender.pdb
+C:\Users\Andy\OneDrive\Bureaublad\BLL.pdb

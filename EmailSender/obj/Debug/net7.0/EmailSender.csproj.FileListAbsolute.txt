@@ -1,0 +1,15 @@
+C:\Users\Andy\source\repos\PdfChange\EmailSender\bin\Debug\net7.0\EmailSender.deps.json
+C:\Users\Andy\source\repos\PdfChange\EmailSender\bin\Debug\net7.0\EmailSender.dll
+C:\Users\Andy\source\repos\PdfChange\EmailSender\bin\Debug\net7.0\EmailSender.pdb
+C:\Users\Andy\source\repos\PdfChange\EmailSender\bin\Debug\net7.0\BLL.dll
+C:\Users\Andy\source\repos\PdfChange\EmailSender\bin\Debug\net7.0\BLL.pdb
+C:\Users\Andy\source\repos\PdfChange\EmailSender\obj\Debug\net7.0\EmailSender.csproj.AssemblyReference.cache
+C:\Users\Andy\source\repos\PdfChange\EmailSender\obj\Debug\net7.0\EmailSender.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andy\source\repos\PdfChange\EmailSender\obj\Debug\net7.0\EmailSender.AssemblyInfoInputs.cache
+C:\Users\Andy\source\repos\PdfChange\EmailSender\obj\Debug\net7.0\EmailSender.AssemblyInfo.cs
+C:\Users\Andy\source\repos\PdfChange\EmailSender\obj\Debug\net7.0\EmailSender.csproj.CoreCompileInputs.cache
+C:\Users\Andy\source\repos\PdfChange\EmailSender\obj\Debug\net7.0\EmailSender.csproj.CopyComplete
+C:\Users\Andy\source\repos\PdfChange\EmailSender\obj\Debug\net7.0\EmailSender.dll
+C:\Users\Andy\source\repos\PdfChange\EmailSender\obj\Debug\net7.0\refint\EmailSender.dll
+C:\Users\Andy\source\repos\PdfChange\EmailSender\obj\Debug\net7.0\EmailSender.pdb
+C:\Users\Andy\source\repos\PdfChange\EmailSender\obj\Debug\net7.0\ref\EmailSender.dll
