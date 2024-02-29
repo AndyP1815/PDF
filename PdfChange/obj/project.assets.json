@@ -121,11 +121,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andy\\source\\repos\\PdfChange\\PdfChange\\PdfChange.csproj",
+      "projectUniqueName": "C:\\Users\\Andy\\OneDrive\\Documenten\\GIT\\PDF\\PdfChange\\PdfChange.csproj",
       "projectName": "PdfChange",
-      "projectPath": "C:\\Users\\Andy\\source\\repos\\PdfChange\\PdfChange\\PdfChange.csproj",
+      "projectPath": "C:\\Users\\Andy\\OneDrive\\Documenten\\GIT\\PDF\\PdfChange\\PdfChange.csproj",
       "packagesPath": "C:\\Users\\Andy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andy\\source\\repos\\PdfChange\\PdfChange\\obj\\",
+      "outputPath": "C:\\Users\\Andy\\OneDrive\\Documenten\\GIT\\PDF\\PdfChange\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -147,11 +147,11 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\Andy\\source\\repos\\PdfChange\\BLL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\Andy\\source\\repos\\PdfChange\\BLL\\DAL.csproj"
+            "C:\\Users\\Andy\\OneDrive\\Documenten\\GIT\\PDF\\BLL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\Andy\\OneDrive\\Documenten\\GIT\\PDF\\BLL\\DAL.csproj"
             },
-            "C:\\Users\\Andy\\source\\repos\\PdfChange\\EmailSender\\EmailSender.csproj": {
-              "projectPath": "C:\\Users\\Andy\\source\\repos\\PdfChange\\EmailSender\\EmailSender.csproj"
+            "C:\\Users\\Andy\\OneDrive\\Documenten\\GIT\\PDF\\EmailSender\\EmailSender.csproj": {
+              "projectPath": "C:\\Users\\Andy\\OneDrive\\Documenten\\GIT\\PDF\\EmailSender\\EmailSender.csproj"
             }
           }
         }

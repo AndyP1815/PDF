@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andy\\source\\repos\\PdfChange\\EmailSender\\EmailSender.csproj": {}
+    "C:\\Users\\Andy\\OneDrive\\Documenten\\GIT\\PDF\\EmailSender\\EmailSender.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andy\\source\\repos\\PdfChange\\DAL\\BLL.csproj": {
+    "C:\\Users\\Andy\\OneDrive\\Documenten\\GIT\\PDF\\DAL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andy\\source\\repos\\PdfChange\\DAL\\BLL.csproj",
+        "projectUniqueName": "C:\\Users\\Andy\\OneDrive\\Documenten\\GIT\\PDF\\DAL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\Users\\Andy\\source\\repos\\PdfChange\\DAL\\BLL.csproj",
+        "projectPath": "C:\\Users\\Andy\\OneDrive\\Documenten\\GIT\\PDF\\DAL\\BLL.csproj",
         "packagesPath": "C:\\Users\\Andy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andy\\source\\repos\\PdfChange\\DAL\\obj\\",
+        "outputPath": "C:\\Users\\Andy\\OneDrive\\Documenten\\GIT\\PDF\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\Andy\\source\\repos\\PdfChange\\EmailSender\\EmailSender.csproj": {
+    "C:\\Users\\Andy\\OneDrive\\Documenten\\GIT\\PDF\\EmailSender\\EmailSender.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andy\\source\\repos\\PdfChange\\EmailSender\\EmailSender.csproj",
+        "projectUniqueName": "C:\\Users\\Andy\\OneDrive\\Documenten\\GIT\\PDF\\EmailSender\\EmailSender.csproj",
         "projectName": "EmailSender",
-        "projectPath": "C:\\Users\\Andy\\source\\repos\\PdfChange\\EmailSender\\EmailSender.csproj",
+        "projectPath": "C:\\Users\\Andy\\OneDrive\\Documenten\\GIT\\PDF\\EmailSender\\EmailSender.csproj",
         "packagesPath": "C:\\Users\\Andy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andy\\source\\repos\\PdfChange\\EmailSender\\obj\\",
+        "outputPath": "C:\\Users\\Andy\\OneDrive\\Documenten\\GIT\\PDF\\EmailSender\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -93,8 +93,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Andy\\source\\repos\\PdfChange\\DAL\\BLL.csproj": {
-                "projectPath": "C:\\Users\\Andy\\source\\repos\\PdfChange\\DAL\\BLL.csproj"
+              "C:\\Users\\Andy\\OneDrive\\Documenten\\GIT\\PDF\\DAL\\BLL.csproj": {
+                "projectPath": "C:\\Users\\Andy\\OneDrive\\Documenten\\GIT\\PDF\\DAL\\BLL.csproj"
               }
             }
           }

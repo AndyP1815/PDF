@@ -29,6 +29,14 @@
 		private void InitializeComponent()
 		{
 			tabControl1 = new TabControl();
+			tabPage1 = new TabPage();
+			PathTxtbx = new TextBox();
+			ConvertBtn = new Button();
+			label1 = new Label();
+			MapNameTxtbx = new TextBox();
+			label2 = new Label();
+			SelectBtn = new Button();
+			DocumentNameTxtbx = new TextBox();
 			tabPage2 = new TabPage();
 			Idtextnum = new NumericUpDown();
 			label4 = new Label();
@@ -49,19 +57,11 @@
 			MailFolderTxtbx = new TextBox();
 			FailedListbx = new ListBox();
 			SelectMailPdfBtn = new Button();
-			DocumentNameTxtbx = new TextBox();
-			SelectBtn = new Button();
-			label2 = new Label();
-			MapNameTxtbx = new TextBox();
-			label1 = new Label();
-			ConvertBtn = new Button();
-			PathTxtbx = new TextBox();
-			tabPage1 = new TabPage();
 			tabControl1.SuspendLayout();
+			tabPage1.SuspendLayout();
 			tabPage2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)Idtextnum).BeginInit();
 			tabPage3.SuspendLayout();
-			tabPage1.SuspendLayout();
 			SuspendLayout();
 			// 
 			// tabControl1
@@ -74,6 +74,82 @@
 			tabControl1.SelectedIndex = 0;
 			tabControl1.Size = new Size(734, 477);
 			tabControl1.TabIndex = 7;
+			// 
+			// tabPage1
+			// 
+			tabPage1.Controls.Add(PathTxtbx);
+			tabPage1.Controls.Add(ConvertBtn);
+			tabPage1.Controls.Add(label1);
+			tabPage1.Controls.Add(MapNameTxtbx);
+			tabPage1.Controls.Add(label2);
+			tabPage1.Controls.Add(SelectBtn);
+			tabPage1.Controls.Add(DocumentNameTxtbx);
+			tabPage1.Location = new Point(4, 34);
+			tabPage1.Name = "tabPage1";
+			tabPage1.Padding = new Padding(3);
+			tabPage1.Size = new Size(726, 439);
+			tabPage1.TabIndex = 0;
+			tabPage1.Text = "tabPage1";
+			tabPage1.UseVisualStyleBackColor = true;
+			tabPage1.Click += tabPage1_Click;
+			// 
+			// PathTxtbx
+			// 
+			PathTxtbx.Location = new Point(201, 38);
+			PathTxtbx.Name = "PathTxtbx";
+			PathTxtbx.ReadOnly = true;
+			PathTxtbx.Size = new Size(315, 31);
+			PathTxtbx.TabIndex = 2;
+			// 
+			// ConvertBtn
+			// 
+			ConvertBtn.Location = new Point(482, 301);
+			ConvertBtn.Name = "ConvertBtn";
+			ConvertBtn.Size = new Size(172, 59);
+			ConvertBtn.TabIndex = 0;
+			ConvertBtn.Text = "start";
+			ConvertBtn.UseVisualStyleBackColor = true;
+			ConvertBtn.Click += ConvertBtn_Click;
+			// 
+			// label1
+			// 
+			label1.AutoSize = true;
+			label1.Location = new Point(27, 131);
+			label1.Name = "label1";
+			label1.Size = new Size(0, 25);
+			label1.TabIndex = 3;
+			// 
+			// MapNameTxtbx
+			// 
+			MapNameTxtbx.Location = new Point(201, 182);
+			MapNameTxtbx.Name = "MapNameTxtbx";
+			MapNameTxtbx.Size = new Size(315, 31);
+			MapNameTxtbx.TabIndex = 6;
+			// 
+			// label2
+			// 
+			label2.AutoSize = true;
+			label2.Location = new Point(57, 182);
+			label2.Name = "label2";
+			label2.Size = new Size(0, 25);
+			label2.TabIndex = 4;
+			// 
+			// SelectBtn
+			// 
+			SelectBtn.Location = new Point(42, 21);
+			SelectBtn.Name = "SelectBtn";
+			SelectBtn.Size = new Size(112, 65);
+			SelectBtn.TabIndex = 1;
+			SelectBtn.Text = "Select";
+			SelectBtn.UseVisualStyleBackColor = true;
+			SelectBtn.Click += SelectBtn_Click;
+			// 
+			// DocumentNameTxtbx
+			// 
+			DocumentNameTxtbx.Location = new Point(201, 131);
+			DocumentNameTxtbx.Name = "DocumentNameTxtbx";
+			DocumentNameTxtbx.Size = new Size(315, 31);
+			DocumentNameTxtbx.TabIndex = 5;
 			// 
 			// tabPage2
 			// 
@@ -274,82 +350,6 @@
 			SelectMailPdfBtn.UseVisualStyleBackColor = true;
 			SelectMailPdfBtn.Click += SelectMailPdfBtn_Click;
 			// 
-			// DocumentNameTxtbx
-			// 
-			DocumentNameTxtbx.Location = new Point(201, 131);
-			DocumentNameTxtbx.Name = "DocumentNameTxtbx";
-			DocumentNameTxtbx.Size = new Size(315, 31);
-			DocumentNameTxtbx.TabIndex = 5;
-			// 
-			// SelectBtn
-			// 
-			SelectBtn.Location = new Point(42, 21);
-			SelectBtn.Name = "SelectBtn";
-			SelectBtn.Size = new Size(112, 65);
-			SelectBtn.TabIndex = 1;
-			SelectBtn.Text = "Select";
-			SelectBtn.UseVisualStyleBackColor = true;
-			SelectBtn.Click += SelectBtn_Click;
-			// 
-			// label2
-			// 
-			label2.AutoSize = true;
-			label2.Location = new Point(57, 182);
-			label2.Name = "label2";
-			label2.Size = new Size(0, 25);
-			label2.TabIndex = 4;
-			// 
-			// MapNameTxtbx
-			// 
-			MapNameTxtbx.Location = new Point(201, 182);
-			MapNameTxtbx.Name = "MapNameTxtbx";
-			MapNameTxtbx.Size = new Size(315, 31);
-			MapNameTxtbx.TabIndex = 6;
-			// 
-			// label1
-			// 
-			label1.AutoSize = true;
-			label1.Location = new Point(27, 131);
-			label1.Name = "label1";
-			label1.Size = new Size(0, 25);
-			label1.TabIndex = 3;
-			// 
-			// ConvertBtn
-			// 
-			ConvertBtn.Location = new Point(482, 301);
-			ConvertBtn.Name = "ConvertBtn";
-			ConvertBtn.Size = new Size(172, 59);
-			ConvertBtn.TabIndex = 0;
-			ConvertBtn.Text = "start";
-			ConvertBtn.UseVisualStyleBackColor = true;
-			ConvertBtn.Click += ConvertBtn_Click;
-			// 
-			// PathTxtbx
-			// 
-			PathTxtbx.Location = new Point(201, 38);
-			PathTxtbx.Name = "PathTxtbx";
-			PathTxtbx.ReadOnly = true;
-			PathTxtbx.Size = new Size(315, 31);
-			PathTxtbx.TabIndex = 2;
-			// 
-			// tabPage1
-			// 
-			tabPage1.Controls.Add(PathTxtbx);
-			tabPage1.Controls.Add(ConvertBtn);
-			tabPage1.Controls.Add(label1);
-			tabPage1.Controls.Add(MapNameTxtbx);
-			tabPage1.Controls.Add(label2);
-			tabPage1.Controls.Add(SelectBtn);
-			tabPage1.Controls.Add(DocumentNameTxtbx);
-			tabPage1.Location = new Point(4, 34);
-			tabPage1.Name = "tabPage1";
-			tabPage1.Padding = new Padding(3);
-			tabPage1.Size = new Size(726, 439);
-			tabPage1.TabIndex = 0;
-			tabPage1.Text = "tabPage1";
-			tabPage1.UseVisualStyleBackColor = true;
-			tabPage1.Click += tabPage1_Click;
-			// 
 			// Form1
 			// 
 			AutoScaleDimensions = new SizeF(10F, 25F);
@@ -360,13 +360,13 @@
 			Text = "Form1";
 			Load += Form1_Load;
 			tabControl1.ResumeLayout(false);
+			tabPage1.ResumeLayout(false);
+			tabPage1.PerformLayout();
 			tabPage2.ResumeLayout(false);
 			tabPage2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)Idtextnum).EndInit();
 			tabPage3.ResumeLayout(false);
 			tabPage3.PerformLayout();
-			tabPage1.ResumeLayout(false);
-			tabPage1.PerformLayout();
 			ResumeLayout(false);
 		}
 

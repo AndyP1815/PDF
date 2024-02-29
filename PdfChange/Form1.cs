@@ -3,12 +3,14 @@ using System.Net.Mail;
 using System.Net.Mime;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 using BLL;
 using BLL.Interfaces;
 using DAL;
 using EmailSender;
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.parser;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 
@@ -312,95 +314,112 @@ namespace PdfChange
 
 		private async void SendBtn_Click(object sender, EventArgs e)
 		{
-			List<string> notSend = new List<string>();
-			notSend = Directory.GetFiles(MailFolderPath, "*.pdf").ToList();
+			List<string> notSend = Directory.GetFiles(MailFolderPath, "*.pdf").ToList();
 
 			if (Check2())
 			{
-				foreach (string pdfFilePath in Directory.GetFiles(MailFolderPath, "*.pdf"))
+				try
 				{
-					string PdfText = ReturnText(pdfFilePath);
-					string number = ReturnNumber(PdfText);
-					string name = ReturnName(PdfText);
-
-					Employee targetEmployee = employeeManager.GetEmployees().FirstOrDefault(x => x.Id == Convert.ToInt32(ReturnNumber(ReturnText(pdfFilePath))));
-					if (targetEmployee != null)
+					foreach (var pdfFilePath in notSend)
 					{
-						Attachment attachment = new Attachment(pdfFilePath, MediaTypeNames.Application.Pdf);
-						var mail = targetEmployee.Email;
-						var title = Titletxtbx.Text;
-						var message = string.IsNullOrEmpty(MessageTextbx.Text) ? "Loonstrook" : MessageTextbx.Text;
-						var FileName = System.IO.Path.GetFileName(pdfFilePath);
+						string PdfText = ReturnText(pdfFilePath);
+						string number = ReturnNumber(PdfText);
+						string name = ReturnName(PdfText);
 
-
-						if (ConfirmDialogCheckBox.Checked)
+						Employee targetEmployee = employeeManager.GetEmployees().FirstOrDefault(x => x.Id == Convert.ToInt32(ReturnNumber(ReturnText(pdfFilePath))));
+						if (targetEmployee != null)
 						{
-							DialogResult result = MessageBox.Show($"Wil je deze pdf {FileName} naar deze mail sturen {mail}", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-							if (result == DialogResult.Yes)
+							Attachment attachment = new Attachment(pdfFilePath, MediaTypeNames.Application.Pdf);
+							var mail = targetEmployee.Email;
+							var title = Titletxtbx.Text;
+							var message = string.IsNullOrEmpty(MessageTextbx.Text) ? "Loonstrook" : MessageTextbx.Text;
+							var FileName = System.IO.Path.GetFileName(pdfFilePath);
+
+							if (ConfirmDialogCheckBox.Checked)
+							{
+								DialogResult result = DialogResult.None;
+
+								// Invoke UI operation to show MessageBox on the UI thread
+								FailedListbx.Invoke(new Action(() =>
+								{
+									result = MessageBox.Show($"Wil je deze pdf {FileName} naar deze mail sturen {mail}", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+								}));
+
+								if (result == DialogResult.Yes)
+								{
+									try
+									{
+										bool success = await sendlingEmail.SendEmail(mail, title, message, attachment);
+										await Task.Delay(TimeSpan.FromSeconds(30));
+
+										if (!success)
+										{
+											FailedListbx.Invoke(new Action(() =>
+											{
+												FailedListbx.Items.Add($"{number} - {name}");
+											}));
+										}
+									}
+									catch (Exception ex)
+									{
+										FailedListbx.Invoke(new Action(() =>
+										{
+											FailedListbx.Items.Add($"{number} - {name}");
+										}));
+									}
+								}
+							}
+							else
 							{
 								try
 								{
-									bool succes = await sendlingEmail.SendEmail(mail, title, message, attachment);
+									bool success = await sendlingEmail.SendEmail(mail, title, message, attachment);
+									await Task.Delay(TimeSpan.FromSeconds(30));
 
-									if (succes)
+									if (!success)
 									{
-
+										FailedListbx.Invoke(new Action(() =>
+										{
+											FailedListbx.Items.Add($"{number} - {name}");
+										}));
 									}
-									else
-									{
-										FailedListbx.Items.Add($"{number} - {name}");
-									}
-
 								}
 								catch (Exception ex)
 								{
-									FailedListbx.Items.Add($"{number} - {name}");
+									FailedListbx.Invoke(new Action(() =>
+									{
+										FailedListbx.Items.Add($"{number} - {name}");
+									}));
 								}
-							}
-							if (result == DialogResult.No)
-							{
-								FailedListbx.Items.Add($"{number} - {name}");
 							}
 						}
 						else
 						{
-							try
-							{
-								bool succes = await sendlingEmail.SendEmail(mail, title, message, attachment);
-
-								if (succes)
-								{
-
-								}
-								else
-								{
-									FailedListbx.Items.Add($"{number} - {name}");
-								}
-
-							}
-							catch (Exception ex)
+							FailedListbx.Invoke(new Action(() =>
 							{
 								FailedListbx.Items.Add($"{number} - {name}");
-							}
+							}));
 						}
 					}
-					else 
-					{
-						FailedListbx.Items.Add($"{number} - {name}");
-					}
-				} 
+				}
+				catch (Exception ex)
+				{
+					MessageBox.Show($"An error occurred: {ex.Message}");
+				}
 			}
-
 			else
 			{
-				MessageBox.Show("Je mist iets vul het nog in");
+				MessageBox.Show("Je mist iets, vul het nog in");
 			}
-	
 		}
+
+
+
 
 		private void tabPage1_Click(object sender, EventArgs e)
 		{
-
 		}
+
+
 	}
 }

@@ -31,8 +31,6 @@ namespace EmailSender
 			}
 			catch (Exception ex)
 			{
-				
-
 				return false; // Failure
 			}
 		}
